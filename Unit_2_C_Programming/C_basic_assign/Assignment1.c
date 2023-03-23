@@ -32,8 +32,11 @@ int main(void)
 	scanf("%f %f",&a,&b);
 	product=a*b;
 	printf("product: %f ",product);*/
-
-
+	char a;
+	printf("enter a character: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%c",&a);
+	printf("ASCII value of %c = %d ",a,a);
 	return 0;
 
 }

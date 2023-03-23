@@ -36,7 +36,8 @@ int main(void)
 	product=a*b;
 	printf("product: %f ",product);*/
 
-	/*Ex5(Find ASCII Value of a Character)
+	/*Ex5
+	(Find ASCII Value of a Character)
 	char a;
 	printf("enter a character: ");
 	fflush(stdin);fflush(stdout);
@@ -57,6 +58,19 @@ int main(void)
 	printf("After swapping, value of a = %.2f\n",a);
 	printf("After swapping, value of b = %.1f",b);*/
 
+	/*Ex7(Swap Two Numbers without using temp var)
+	float a,b;
+	printf("Enter value of a: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%f",&a);
+	printf("Enter value of b: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%f",&b);
+	a=a*b;
+	b=a/b;
+	a=a/b;
+	printf("After swapping, value of a = %.2f\n",a);
+	printf("After swapping, value of b = %.1f",b);*/
 
 	return 0;
 }

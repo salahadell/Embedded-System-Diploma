@@ -32,11 +32,24 @@ int main(void)
 	scanf("%f %f",&a,&b);
 	product=a*b;
 	printf("product: %f ",product);*/
+	/*Ex5
 	char a;
 	printf("enter a character: ");
 	fflush(stdin);fflush(stdout);
 	scanf("%c",&a);
-	printf("ASCII value of %c = %d ",a,a);
-	return 0;
+	printf("ASCII value of %c = %d ",a,a);*/
+	float a,b,temp;
+	printf("Enter value of a: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%f",&a);
+	printf("Enter value of b: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%f",&b);
+	temp=a;
+	a=b;
+	b=temp;
+	printf("After swapping, value of a = %.2f\n",a);
+	printf("After swapping, value of b = %.1f",b);
 
+	return 0;
 }

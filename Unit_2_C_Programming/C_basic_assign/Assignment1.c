@@ -12,15 +12,28 @@ int main(void)
 	fflush(stdout);
 	scanf("%d",&a);
 	printf("you entered: %d",a);*/
+	/*Ex3
 	int a;
 	int b;
-	float sum;
+	int sum;
 	printf("enter two numbers: ");
 	fflush(stdin);
 	fflush(stdout);
 	scanf("%d %d",&a,&b);
 	sum=a+b;
-	printf("sum: %f ",sum);
+	printf("sum: %d ",sum);*/
+	/*Ex4
+	float a;
+	float b;
+	float product;
+	printf("enter two numbers: ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%f %f",&a,&b);
+	product=a*b;
+	printf("product: %f ",product);*/
+
+
 	return 0;
 
 }

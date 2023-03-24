@@ -114,7 +114,7 @@ int main()
 		//printf("Factorial =%d ",Facto(a));
 	}*/
 
-	/*Ex8 (make a simple calculator)
+	//Ex8 (make a simple calculator)
 	char operator;
 	float op1,op2;
 	printf("Enter an operator either + or - or / or * : ");
@@ -129,15 +129,15 @@ int main()
 		printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1*op2);
 		break;
 	case '/':
-			printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1/op2);
-			break;
+		printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1/op2);
+		break;
 	case '+':
-			printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1+op2);
-			break;
+		printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1+op2);
+		break;
 	case '-':
-			printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1-op2);
-			break;
-	}*/
+		printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1-op2);
+		break;
+	}
 	return 0;
 }
 

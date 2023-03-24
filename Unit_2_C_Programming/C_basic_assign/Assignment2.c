@@ -87,6 +87,15 @@ int main()
 	else
 		printf("%c is not an alphabet ",a);*/
 
+	/*Ex6
+	int a,sum=0;
+	printf("enter an integer: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&a);
+	for(int i=0;i<a;i++)
+		sum+=i+1;
+	printf("Sum = %d",sum);*/
+
 	return 0;
 }
 

@@ -6,7 +6,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-
+int Facto(int number);
 int main()
 {
 	/*Ex1
@@ -96,6 +96,31 @@ int main()
 		sum+=i+1;
 	printf("Sum = %d",sum);*/
 
+	int a,fact=1;
+	printf("enter an integer: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&a);
+	if(a<0)
+		printf("ERROR!!! Factorial of negative number doesn't exist");
+	else
+	{
+		//using iteration faster and less memory
+		/*for(int i=0;i<a;i++)
+			fact*=i+1;
+		printf("Factorial =%d ",fact);*/
+
+		//using recursion slower because calling the stack and more memory
+		printf("Factorial =%d ",Facto(a));
+	}
 	return 0;
+}
+
+int Facto(int number)
+{
+	if(number==0||number==1)
+		return 1 ;
+	else
+		return (number*Facto(number-1));
+
 }
 

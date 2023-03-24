@@ -44,6 +44,7 @@ int main()
 	    printf("%c is a consonant",choice);
 	    break;
 	}*/
+
 	/*Ex3
 	float a,b,c;
 	printf("enter three numbers: ");
@@ -64,6 +65,7 @@ int main()
 			printf("largest number= %.2f ",c);
 	}*/
 
+	/*Ex4
 	float a;
 	printf("enter a number: ");
 	fflush(stdout);fflush(stdin);
@@ -73,7 +75,18 @@ int main()
 	else if(a<0)
 		printf("%.2f is negative ",a);
 	else
-		printf("You entered zero ");
+		printf("You entered zero ");*/
+
+	/*Ex5
+	char a;
+	printf("enter a character: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%c",&a);
+	if((a>='a'||a>='A')&&(a<='z'||a<='Z'))
+		printf("%c is an alphabet ",a);
+	else
+		printf("%c is not an alphabet ",a);*/
+
 	return 0;
 }
 

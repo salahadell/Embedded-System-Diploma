@@ -63,6 +63,17 @@ int main()
 		else
 			printf("largest number= %.2f ",c);
 	}*/
+
+	float a;
+	printf("enter a number: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%f",&a);
+	if(a>0)
+		printf("%.2f is positive ",a);
+	else if(a<0)
+		printf("%.2f is negative ",a);
+	else
+		printf("You entered zero ");
 	return 0;
 }
 

@@ -6,10 +6,10 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-int Facto(int number);
+//int Facto(int number);
 int main()
 {
-	/*Ex1
+	/*Ex1 (check the number is even or odd)
 	int a;
 	printf("Enter an integer you want to check: ");
 	fflush(stdin);fflush(stdout);
@@ -19,7 +19,7 @@ int main()
 	else
 		printf("%d is odd",a);*/
 
-	/*Ex2
+	/*Ex2 (check the char is vowel or consonant)
 	char choice;
 	printf("Enter an alphabet: ");
 	fflush(stdin);fflush(stdout);
@@ -45,7 +45,7 @@ int main()
 	    break;
 	}*/
 
-	/*Ex3
+	/*Ex3 (find the largest number)
 	float a,b,c;
 	printf("enter three numbers: ");
 	fflush(stdout);fflush(stdin);
@@ -65,7 +65,7 @@ int main()
 			printf("largest number= %.2f ",c);
 	}*/
 
-	/*Ex4
+	/*Ex4 (check the number is positive or negative or zero)
 	float a;
 	printf("enter a number: ");
 	fflush(stdout);fflush(stdin);
@@ -77,7 +77,7 @@ int main()
 	else
 		printf("You entered zero ");*/
 
-	/*Ex5
+	/*Ex5 (check the char is alphabet or not)
 	char a;
 	printf("enter a character: ");
 	fflush(stdout);fflush(stdin);
@@ -87,7 +87,7 @@ int main()
 	else
 		printf("%c is not an alphabet ",a);*/
 
-	/*Ex6
+	/*Ex6 (calculate the sum of natural numbers)
 	int a,sum=0;
 	printf("enter an integer: ");
 	fflush(stdout);fflush(stdin);
@@ -96,7 +96,7 @@ int main()
 		sum+=i+1;
 	printf("Sum = %d",sum);*/
 
-	/*Ex7
+	/*Ex7 (find the factorial of a number)
 	int a,fact=1;
 	printf("enter an integer: ");
 	fflush(stdout);fflush(stdin);
@@ -114,7 +114,7 @@ int main()
 		//printf("Factorial =%d ",Facto(a));
 	}*/
 
-	/*Ex8
+	/*Ex8 (make a simple calculator)
 	char operator;
 	float op1,op2;
 	printf("Enter an operator either + or - or / or * : ");
@@ -141,11 +141,11 @@ int main()
 	return 0;
 }
 
-int Facto(int number)
+/*int Facto(int number)
 {
 	if(number==0||number==1)
 		return 1 ;
 	else
 		return (number*Facto(number-1));
-}
+}*/
 

@@ -96,6 +96,7 @@ int main()
 		sum+=i+1;
 	printf("Sum = %d",sum);*/
 
+	/*Ex7
 	int a,fact=1;
 	printf("enter an integer: ");
 	fflush(stdout);fflush(stdin);
@@ -105,13 +106,38 @@ int main()
 	else
 	{
 		//using iteration faster and less memory
-		/*for(int i=0;i<a;i++)
+		for(int i=0;i<a;i++)
 			fact*=i+1;
-		printf("Factorial =%d ",fact);*/
+		printf("Factorial =%d ",fact);
 
 		//using recursion slower because calling the stack and more memory
-		printf("Factorial =%d ",Facto(a));
-	}
+		//printf("Factorial =%d ",Facto(a));
+	}*/
+
+	/*Ex8
+	char operator;
+	float op1,op2;
+	printf("Enter an operator either + or - or / or * : ");
+	fflush(stdout);fflush(stdin);
+	scanf("%c",&operator);
+	printf("Enter two operands: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%f %f",&op1,&op2);
+	switch(operator)
+	{
+	case '*':
+		printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1*op2);
+		break;
+	case '/':
+			printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1/op2);
+			break;
+	case '+':
+			printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1+op2);
+			break;
+	case '-':
+			printf("%.1f %c %.1f = %.1f ",op1,operator,op2,op1-op2);
+			break;
+	}*/
 	return 0;
 }
 
@@ -121,6 +147,5 @@ int Facto(int number)
 		return 1 ;
 	else
 		return (number*Facto(number-1));
-
 }
 

@@ -3,7 +3,7 @@
 
 int main()
 {
-	//find sum of two matrix of order 2*2
+	/*Ex1(find sum of two matrix of order 2*2)
 	float mat1 [2][2];
 	float mat2 [2][2];
 	int i,j;
@@ -36,7 +36,59 @@ int main()
 			printf("%0.1f\t",mat2[i][j]);
 		}
 		printf("\n");
+	}*/
+	/*Ex2(calculate the average using arrays)
+	float arr [100];
+	int i,n;float avr=0;
+	printf("Enter the number of data: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("Enter number: ");
+		fflush(stdin);fflush(stdout);
+		scanf("%f",&arr[i]);
+	}
+	for(i=0;i<n;i++)
+		avr+=arr[i];
+	printf("Average = %0.2f",avr/n);*/
+	/*Ex3(find transpose of the matrix)
+	int matr [100][100];
+	int trans [100][100];
+	int i,r,c,j;
+	printf("Enter the number of row and columns : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d %d",&r,&c);
+	printf("Enter element of the matrix:\n");
+
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("Enter Elements a%d%d: ",i+1,j+1);
+			fflush(stdin);fflush(stdout);
+			scanf("%d",&matr[i][j]);
+		}
 	}
 
+	printf("Entered matrix:\n ");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("%d\t",matr[i][j]);
+			trans[j][i]=matr[i][j];
+		}
+		printf("\n");
+	}
+
+	printf("transpose matrix:\n ");
+	for(i=0;i<c;i++)
+	{
+		for(j=0;j<r;j++)
+			printf("%d\t",trans[i][j]);
+		printf("\n");
+	}*/
 	return 0;
+
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
+#include <string.h>
 int main()
 {
 	/*Ex1(find sum of two matrix of order 2*2)
@@ -144,6 +144,21 @@ int main()
 	if(!found)
 		printf("Number not found");*/
 
+	/*Ex6 (find the frequency of a character in a string)
+	char string [100],searched_char;
+	int freq=0;
+	printf("Enter a string: ");
+	fflush(stdin);fflush(stdout);
+	gets(string);
+	printf("Enter a character to find the frequency : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%c",&searched_char);
+	for(int i=0;i<strlen(string);i++)
+	{
+		if(string[i]==searched_char)
+			freq+=1;
+	}
+	printf("Frequency of %c = %d ",searched_char,freq);*/
 	return 0;
 
 }

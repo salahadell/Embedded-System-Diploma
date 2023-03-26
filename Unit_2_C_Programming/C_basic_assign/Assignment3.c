@@ -37,6 +37,7 @@ int main()
 		}
 		printf("\n");
 	}*/
+
 	/*Ex2(calculate the average using arrays)
 	float arr [100];
 	int i,n;float avr=0;
@@ -52,6 +53,7 @@ int main()
 	for(i=0;i<n;i++)
 		avr+=arr[i];
 	printf("Average = %0.2f",avr/n);*/
+
 	/*Ex3(find transpose of the matrix)
 	int matr [100][100];
 	int trans [100][100];
@@ -89,6 +91,30 @@ int main()
 			printf("%d\t",trans[i][j]);
 		printf("\n");
 	}*/
+
+	/*Ex4 (insert an element into an array)
+	int i,num,inserted,loc;
+	int arr [100];
+	printf("Enter number of elements:");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&num);
+
+	for(i=0;i<num;i++)
+		scanf("%d",&arr[i]);
+
+	printf("Enter the element to be inserted: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&inserted);
+	printf("Enter the location: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&loc);
+
+	for(i=num-1;i>=loc-1;i--)
+		arr[i+1]=arr[i];
+	arr[loc-1]=inserted;
+
+	for(i=0;i<num+1;i++)
+		printf("%d  ",arr[i]);*/
 	return 0;
 
 }

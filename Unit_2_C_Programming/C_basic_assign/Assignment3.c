@@ -173,7 +173,7 @@ int main()
 	}
 	printf("Length of string: %d ",length);*/
 
-   /*Ex8 (Reverse string without using library )
+	/*Ex8 (Reverse string without using library )
 	int i ,j=0;
 	char string [100];
 	char Rev_string [100];

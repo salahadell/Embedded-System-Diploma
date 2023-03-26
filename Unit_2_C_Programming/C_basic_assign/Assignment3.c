@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int main()
 {
@@ -115,6 +116,34 @@ int main()
 
 	for(i=0;i<num+1;i++)
 		printf("%d  ",arr[i]);*/
+
+	/*Ex5 (searching for an element )
+	int i,num,searched;
+	int arr [100];
+	bool found=false;
+	printf("Enter number of elements:");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&num);
+
+	for(i=0;i<num;i++)
+		scanf("%d",&arr[i]);
+
+	printf("Enter the element to be searched: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&searched);
+
+	for(i=0;i<num;i++)
+	{
+		if(arr[i]==searched)
+		{
+			printf("Number found at the location= %d",i+1);
+			found=true;
+			break;
+		}
+	}
+	if(!found)
+		printf("Number not found");*/
+
 	return 0;
 
 }

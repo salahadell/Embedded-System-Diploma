@@ -173,6 +173,21 @@ int main()
 	}
 	printf("Length of string: %d ",length);*/
 
+   /*Ex8 (Reverse string without using library )
+	int i ,j=0;
+	char string [100];
+	char Rev_string [100];
+	printf("Enter a string: ");
+	fflush(stdin);fflush(stdout);
+	gets(string);
+
+	for(i=(strlen(string)-1);i>=0;i--)
+	{
+		Rev_string[j]=string[i];
+		j++;
+	}
+	Rev_string[j]='\0';
+	printf("Reverse string is: %s",Rev_string);*/
 	return 0;
 
 }

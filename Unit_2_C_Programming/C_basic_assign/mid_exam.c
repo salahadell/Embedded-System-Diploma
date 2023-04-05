@@ -127,53 +127,13 @@ void reverse_words(char arr[])
 }
 int max_num_of_ones(int num)
 {
-	int i,j,k,count1,count2,length;
-	int binary_num[32];
-	for(i=0;i<32; i++)
-		binary_num[i]=0;
-	for(i=0;num>0; i++)
+	int count=0;
+	while(num!=0)
 	{
-		binary_num[i]=num%2;
-		num=num/2;
+		num=(num&(num<<1));
+		count++;
 	}
-	length=i-1;  //number of bits used to represent our number
-	//******************************************************************//
-	for(i=0;i<length; i++)
-	{
-		if(binary_num[i]==0)
-		{
-			for(j=i+1;j<length; j++)
-				label1:{
-					if(binary_num[j]==1)
-						count1++;
-					else
-					{
-						for(k=j+1;k<length; k++)
-						{
-							if(binary_num[k]==1)
-								count2++;
-							else
-							{
-								if(count2>=count1)
-								{
-									i=j;
-									j=k;
-									count1=count2;
-									goto label1;
-								}
-								else
-								{
-									j=k;
-									count2=0;
-									goto label1;
-								}
-							}
-						}
-					}
-			}
-		}
-	}
-	return count1;
+	return count;
 }
 
 int main(void)
@@ -197,10 +157,10 @@ int main(void)
 	fflush(stdin);fflush(stdout);
 	gets(arr);
 	reverse_words(arr);*/
-	/*int num;
+	int num;
 	printf("Enter a number:");
 	fflush(stdout);fflush(stdin);
 	scanf("%d",&num);
-	printf("output:%d",max_num_of_ones(num));*/
+	printf("output:%d",max_num_of_ones(num));
 }
 

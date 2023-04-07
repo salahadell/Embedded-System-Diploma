@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define M_PI 3.14
-
-float calc_carea(float r);
+#define calc_carea(r)  M_PI*r*r
 int main()
 {
 	float r;
@@ -12,7 +11,4 @@ int main()
 	printf("Area: %.2f",calc_carea(r));
 
 }
-float calc_carea(float r)
-{
-	return r*r*M_PI;
-}
+

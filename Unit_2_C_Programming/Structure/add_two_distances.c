@@ -1,6 +1,5 @@
 /*
  * add_ two_distances.c
- *
  *  Created on: Apr 7, 2023
  *      Author: salah
  */

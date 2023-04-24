@@ -1,0 +1,21 @@
+.section .vectors
+
+.word stack_top                /*stack top*/
+.word reset                    /*NMI*/
+.word vector_handler          /*HARD FAULT*/
+.word vector_handler         /*MEM MANEGE*/
+.word vector_handler        /*BUS FAULT*/
+.word vector_handler       /*.........*/
+.word vector_handler      /*.........*/
+.word vector_handler     /*.........*/
+.word vector_handler    /*.........*/
+.word vector_handler   /*.........*/
+
+.section .text
+reset:
+	bl main
+	b  .
+	
+.thumb_func
+vector_handler:
+	b reset    

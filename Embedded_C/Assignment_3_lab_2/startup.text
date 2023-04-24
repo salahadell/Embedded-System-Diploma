@@ -1,0 +1,14 @@
+00000000 W bus_fault_handler
+00000000 T default_handler
+         U E_bss
+         U E_data
+         U E_text
+00000000 W HardF_handler
+         U main
+00000000 W Memm_handler
+00000000 W NMI_handler
+0000000c T reset_handler
+         U S_bss
+         U S_data
+         U stack_top
+00000000 D vectors

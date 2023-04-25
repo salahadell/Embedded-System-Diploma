@@ -1,0 +1,12 @@
+00000000 R arr_of_pointers_to_Hfunctions
+00000000 T default_handler
+         U E_bss
+         U E_data
+         U E_text
+00000000 W HardF_handler
+         U main
+00000000 W NMI_handler
+0000000c T reset_handler
+         U S_bss
+         U S_data
+00000000 b stack_top

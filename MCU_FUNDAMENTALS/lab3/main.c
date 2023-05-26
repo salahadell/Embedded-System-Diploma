@@ -23,7 +23,7 @@ typedef volatile unsigned char vuint08_t ;
 void PORTD_init()
 {
 	//enable output point to pin5/6/7
-	PORTD_|=0b111<<5;
+	DDRD_|=0b111<<5;
 
 }
 
@@ -42,7 +42,7 @@ int main(void)
 
 	while(1)
 	{
-		PORTD_|= 0b000<<5 ;
+		PORTD_&= ~(0b111<<5) ;
 	}
 	return 0;
 }
